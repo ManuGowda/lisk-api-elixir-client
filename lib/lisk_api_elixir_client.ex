@@ -11,7 +11,7 @@ defmodule LiskApiElixirClient do
   @doc """
   Function to construct the url
   """
-  def build_url(route), do: "#{node_address()}/#{route}"
+  def build_url(route), do: "#{node_address()}#{route}"
 
   @doc """
   Function to handle the get request
