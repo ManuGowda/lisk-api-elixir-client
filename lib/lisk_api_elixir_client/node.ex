@@ -35,7 +35,7 @@ defmodule LiskApiElixirClient.Node do
 
   @doc """
   Update node forging.
-  **Method**: GET
+  **Method**: PUT
   LiskApiElixirClient.Node.update_forging_status(%{forging: true, password: "mypass", publicKey: "fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"})
   # => { data, meta, links }
   """
