@@ -7,7 +7,15 @@ defmodule LiskApiElixirClient.MixProject do
       version: "0.1.0",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      # Docs
+      name: "LiskApiElixirClient",
+      source_url: "https://github.com/ManuGowda/lisk-api-elixir-client",
+      homepage_url: "https://github.com/ManuGowda/lisk-api-elixir-client",
+      docs: [
+        main: "LiskApiElixirClient",
+        extras: ["README.md"]
+      ]
     ]
   end
 
@@ -21,8 +29,8 @@ defmodule LiskApiElixirClient.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ex_doc, "~> 0.11", only: :dev},
-      {:earmark, "~> 0.1", only: :dev},
+      {:ex_doc, "~> 0.19.2", only: :dev},
+      {:earmark, "~> 1.2", only: :dev},
       {:httpoison, "~> 1.0"},
       {:poison, "~> 4.0"}
     ]
