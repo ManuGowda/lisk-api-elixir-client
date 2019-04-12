@@ -4,7 +4,7 @@ defmodule LiskApiElixirClient.Blocks do
   """
 
   @doc """
-  Get Lisk account.
+  Get blocks.
   **Method**: GET
   LiskApiElixirClient.Blocks.get(%{address?: string, publicKey?: publicKey})
   # => { data, meta, links }
