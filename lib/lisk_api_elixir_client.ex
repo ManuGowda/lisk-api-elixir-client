@@ -18,7 +18,7 @@ defmodule LiskApiElixirClient do
   """
   def handle_get_request(route, args) do
     try do
-      case LiskApiElixirClient.Client.get(route, args) do
+      case LiskApiElixirClient.ApiClient.get(route, args) do
         {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
           body |> Poison.decode!()
 
@@ -41,7 +41,7 @@ defmodule LiskApiElixirClient do
   """
   def handle_post_request(route, args) do
     try do
-      case LiskApiElixirClient.Client.post(route, args) do
+      case LiskApiElixirClient.ApiClient.post(route, args) do
         {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
           body |> Poison.decode!()
 
@@ -64,7 +64,7 @@ defmodule LiskApiElixirClient do
   """
   def handle_put_request(route, args) do
     try do
-      case LiskApiElixirClient.Client.put(route, args) do
+      case LiskApiElixirClient.ApiClient.put(route, args) do
         {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
           body |> Poison.decode!()
 

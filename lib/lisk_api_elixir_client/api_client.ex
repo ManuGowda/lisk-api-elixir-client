@@ -1,4 +1,4 @@
-defmodule LiskApiElixirClient.Client do
+defmodule LiskApiElixirClient.ApiClient do
   @moduledoc """
   Functions for API client get, post and put request.
   The successful responses for each API request have a common basic structure:
