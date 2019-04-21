@@ -1,6 +1,8 @@
-# LiskApiElixirClient
+Lisk Elixir - API Client
 
-Lisk Blockchain API Client
+[![CircleCI](https://circleci.com/gh/ManuGowda/lisk-api-elixir-client/tree/master.svg?style=svg&circle-token=605dea9f9070f08fd5afcaed19c66d9e125ae989)](https://circleci.com/gh/ManuGowda/lisk-api-elixir-client/tree/master)
+
+> Elixir API Client for accessing Lisk Blockchain
 
 ## Installation
 
