@@ -43,5 +43,3 @@ iex> LiskApiElixirClient.Node.status()
   "meta" => %{}
 }
 ```
-
-The docs can be found at [https://hexdocs.pm/lisk_api_elixir_client](https://hexdocs.pm/lisk_api_elixir_client).
