@@ -8,6 +8,8 @@ defmodule LiskApiElixirClient.MixProject do
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
+      description: description(),
+      package: package(),
       # Docs
       name: "LiskApiElixirClient",
       source_url: "https://github.com/ManuGowda/lisk-api-elixir-client",
@@ -16,6 +18,24 @@ defmodule LiskApiElixirClient.MixProject do
         main: "LiskApiElixirClient",
         extras: ["README.md"]
       ]
+    ]
+  end
+
+  defp description do
+    """
+    Elixir API client for Lisk Blockchain
+    """
+  end
+
+  defp package do
+    [
+      files: ["lib", "mix.exs", "README.md"],
+      maintainers: ["Manu Nelamane Siddalingegowda"],
+      licenses: ["Apache 2.0"],
+      links: %{
+        "GitHub" => "https://github.com/ManuGowda/lisk-api-elixir-client",
+        "Docs" => "http://hexdocs.pm/lisk-api-elixir-client/"
+      }
     ]
   end
 
