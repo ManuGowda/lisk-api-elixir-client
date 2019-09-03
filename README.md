@@ -43,3 +43,5 @@ iex> LiskApiElixirClient.Node.status()
   "meta" => %{}
 }
 ```
+## Docs
+Please refer API docs for more details https://hexdocs.pm/lisk_api_elixir_client/LiskApiElixirClient.Node.html#content
